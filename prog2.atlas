@@ -1,0 +1,15 @@
+// fichier source : prog2.atlas
+programme test;
+const
+    ent max = 100;
+var
+    ent a, b, c;
+debut
+    lire a;
+    b := a * 2;
+    si b >= max
+        alors c := max;
+        sinon c := b;
+    fsi
+    ecrire c;
+fin.

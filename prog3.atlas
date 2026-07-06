@@ -1,0 +1,16 @@
+// fichier source : prog3.atlas
+programme factoriel;
+var
+    ent n, f, i;
+debut
+    lire n;
+    si (n < 0)
+        alors imprimer 'impossible';
+        sinon
+            f := 1;
+            pour i depuis 2 jusqua n faire
+                f := f * i;
+            fpour
+            ecrire f;
+    fsi
+fin.

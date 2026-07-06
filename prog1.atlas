@@ -1,0 +1,11 @@
+// fichier source : prog1.atlas
+programme somme;
+var
+    ent a, b, c;
+debut
+    lire a;
+    lire b;
+    c := a + b;
+    imprimer 'somme:';
+    ecrire c;
+fin.
