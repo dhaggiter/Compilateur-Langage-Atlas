@@ -1,5 +1,25 @@
 # Compilateur Atlas → MAP
-
+Ce projet porte sur la conception et l’implémentation complète d’un compilateur
+pour le langage de programmation Atlas, un langage pédagogique à typage statique
+simple. Le compilateur traduit les programmes sources Atlas vers un code objet
+destiné à une Machine à Pile (MAP), puis ce code est exécuté par un simulateur
+développé en C.
+Le travail réalisé couvre l’intégralité de la chaîne de compilation : analyse lexicale
+avec Flex, analyse syntaxique et sémantique avec Bison, génération de code inter
+médiaire MAP, et simulation d’exécution. Une attention particulière a été portée
+aux règles sémantiques : gestion de la table des symboles, vérification des types,
+détection des erreurs sémantiques (déclarations multiples, variables non déclarées,
+incompatibilités de types, lvalues non valides).
+Les objectifs assignés à ce projet sont quadruples :
+1. Simulateur MAP : Réaliser en C un simulateur de la machine à pile
+capable d’exécuter le code objet produit par le compilateur.
+2. Compilateur Atlas : Écrire une grammaire attribuée pour le langage Atlas
+à l’aide de Bison, enrichie par les actions sémantiques et la génération du
+code objet.
+3. Analyseur lexical : Écrire un analyseur lexical pour le langage Atlas à
+l’aide de Flex.
+4. Intégration : Écrire un programme principal qui permet d’afficher le code
+objet MAP d’un programme source Atlas, puis de l’exécuter.
 ## Structure du projet
 
 | Fichier | Rôle |
